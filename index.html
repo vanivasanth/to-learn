@@ -1,0 +1,55 @@
+<html>
+     <head>
+	       <title> Image gallery</title>
+		   <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+		   <script type="text/javascript" src="lightbox-plus-jquery.min.js">  </script>
+		   <style>
+		      body
+			  {
+			    font-family: sans-serif;
+				background:#C0F578;
+			  }
+			  h1
+			  {
+			    text-align: center;
+				color: forestgreen;
+				margin: 30px 0 50px;
+			  }
+			  .gallery
+			  {
+			    margin: 10px 50px;
+			  }
+			  
+			  .gallery img
+			  {
+			    display: ;
+			    width: 230px;
+				height: 160px;
+				padding:  0px;
+				border: 1px solid black;
+				filter:grayscale(100%);
+				transition: 1s;
+			  }
+			  .gallery img:hover
+			  {
+			    filter:grayscale(0);
+				transform: scale(1.1);
+			  }
+		   
+		   </style>
+		    
+	 </head>
+	 <body> 
+	 <h1> Image gallery </h1><br>
+	   <h2 align="center"> Click on the image for lightbox view</h2>
+	   <div class="gallery">
+	     
+	     <a href="images/f1.jpg" data-lightbox="mygallery"> <img src="images/f1.jpg">
+		 <a href="images/f2.jpg"> <img src="images/f2.jpg">
+		 <a href="images/f3.jpg"> <img src="images/f3.jpg">
+		 <a href="images/f4.jpg"> <img src="images/f4.jpg">
+		 <a href="images/f5.jpg"> <img src="images/f5.jpg">
+		</div>
+	 
+	 </body>
+</html>
